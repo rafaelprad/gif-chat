@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+@import './styles/auth.scss';
+@import './styles/chat.scss';
+@import './app/common/editor/editor.css';
+
+body {   
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.full-content {
+  display: block;
+  position: unset;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.frame-content {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  top: -4px;
+}
+.frame-content div.overflow {
+  overflow: auto;
+}
+.frame-content:not(.has-session-storage) {
+  margin-top: 0px !important;
+}
+

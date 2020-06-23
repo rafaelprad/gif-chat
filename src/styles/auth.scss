@@ -1,0 +1,108 @@
+mat-card.card-auth {
+  width: 300px !important;
+  height: 450px !important;
+  min-height: 500px;
+  margin: 0 auto !important;
+  margin-top: 2.5% !important;
+  padding: 5px !important;
+}
+
+mat-card.card-auth mat-card-actions {
+  padding-top: 50px;
+}
+mat-card.card-auth mat-card-content img {
+  width: 100%;
+  margin: 10px auto !important;
+}
+
+mat-card.card-auth input[type='number']::-webkit-inner-spin-button,
+mat-card.card-auth input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+mat-card.card-auth mat-card-actions {
+  margin: auto;
+}
+
+mat-card.card-auth mat-card-actions div[style*='flex-direction: row'] {
+  margin-top: 5px;
+}
+
+mat-card.card-auth button.mat-button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+mat-card.card-auth div a {
+  cursor: pointer;
+}
+
+mat-card.card-auth div a {
+  text-decoration: underline;
+}
+
+mat-card.card-auth div.left {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+mat-card.card-auth div.left button.hyperlink-inverted {
+  text-align: left;
+  font-size: 75% !important;
+}
+
+mat-card.card-auth div.right {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+mat-card.card-auth div.right button.hyperlink-inverted {
+  text-align: right;
+  font-size: 75% !important;
+}
+
+mat-card.card-auth div p.left {
+  text-align: justify;
+  color: rgba(0,0,0,.75);
+  font-size: 75%;
+  padding-top: 10px;
+  padding: 10px;
+}
+
+mat-card.card-auth div p.message {
+  border: solid 1px;
+  margin: 10px;
+}
+
+mat-card.card-auth div p.message button.hyperlink {
+  color: rgba(0,0,0,.75);
+  background-color: unset !important;
+}
+
+@media only screen and (max-width: 600px) {
+  mat-card.card-auth {
+    width: 100% !important;
+    min-height: 50% !important;
+  }
+  mat-card.card-auth mat-card-content img {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    width: 50% !important;
+    margin: 0px auto !important;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  mat-card.card-auth {
+    height: 100% !important;
+  }
+  mat-card.card-auth mat-card-content {
+    height: auto;
+  }
+  mat-card.card-auth mat-card-actions {
+    padding-top: 50px;
+  }
+}

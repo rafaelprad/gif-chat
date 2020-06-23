@@ -1,0 +1,109 @@
+#editor-base {
+  min-height: 200px;
+  padding-bottom: 1rem;
+  overflow-y: scroll;
+  max-height: 500px;
+}
+
+#editor-base h1,
+#editor-base h2,
+#editor-base h3,
+#editor-base h4,
+#editor-base h5,
+#editor-base h6 {  color :#000 }
+#editor-base strong { font-weight: bold }
+#editor-base u { text-decoration:underline}
+#editor-base s { text-decoration:line-through}
+
+#editor-base i,
+#editor-base p { pointer-events: all !important; }
+
+.ql-custompicture:before {
+    content: ' ';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Crect style='fill: none; stroke: %23444; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;' height='10' width='12' x='3' y='4'%3E%3C/rect%3E%3Ccircle style='fill: %23444;' cx='6' cy='7' r='1'%3E%3C/circle%3E%3Cpolyline style=' fill: %23444;' points='5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12'%3E%3C/polyline%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-size: 20px 20px !important;
+    height: 20px !important;
+    width: 20px !important;
+    display: block;
+}
+
+.ql-field { text-decoration: underline;background-color : lightslategray; }
+
+/* ql-size :: default */
+
+.ql-snow .ql-picker.ql-size .ql-picker-label::before,
+.ql-snow .ql-picker.ql-size .ql-picker-item::before {
+  content: '13';
+}
+
+/* ql-size :: label for selected list font size */
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="8px"]::before {
+    content: '8'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="10px"]::before {
+    content: '10'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="13px"]::before {
+    content: '13'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="16px"]::before {
+    content: '16'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="18px"]::before {
+    content: '18'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="24px"]::before {
+    content: '24'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="28px"]::before {
+    content: '28'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value="32px"]::before {
+    content: '32'; font-size: 13px !important;
+}
+
+/* ql-size :: list font size */
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="8px"]::before {
+    content: '8'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="10px"]::before {
+    content: '10'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="13px"]::before {
+    content: '13'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="16px"]::before {
+    content: '16'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="18px"]::before {
+    content: '18'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="24px"]::before {
+    content: '24'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="28px"]::before {
+    content: '28'; font-size: 13px !important;
+}
+
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="32px"]::before {
+    content: '32'; font-size: 13px !important;
+}
+
+editor .select-wrapper span.caret { display: none }
+editor .select-wrapper input.select-dropdown { display: none }

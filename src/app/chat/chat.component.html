@@ -1,0 +1,37 @@
+<mat-card class="gif-chat-auth" fxLayout="column" fxLayoutAlign="center" fxLayoutGap.xs="0">
+  <mat-card-header>
+    <mat-card-title>
+      <h2>{{ 'GifChat' }}</h2>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div *ngIf="canShowGifGrid()" fxLayout="row" fxLayoutAlign="center">
+      <gif-grid [emitter]="emitterGifGrid"></gif-grid>
+    </div>
+    <div *ngIf="!canShowGifGrid()" fxLayout="row" fxLayoutAlign="center">
+      <editor fxLayout="column" fxFlex="100%" #editorChat id="txtChat" name="txtChat" [staVisibleToolbar]="false"
+        [staReadOnly]="true" [content]="currentChat"></editor>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <div fxLayout="row" fxLayoutAlign="center">
+      <button mat-button id="btnEnter" (click)="onBtnGifSearch()" fxLayout="column" fxLayoutAlign="center"
+        fxFlex="5%"><i class="material-icons left smallsmall">gif</i></button>
+      <div fxLayout="column" fxFlex="90%">
+        <mat-form-field>
+          <input matInput id="txtMessageText" type="text" [formControl]="formChat.controls['messageText']"
+            [(ngModel)]="message.text" maxlength="100">
+          <mat-label>{{ 'Message' }}</mat-label>
+        </mat-form-field>
+      </div>
+      <button mat-button id="btnSend" (click)="onBtnSend()" fxLayout="column" fxLayoutAlign="center" fxFlex="5%"><i
+          class="material-icons left smallsmall">send</i>
+      </button>
+      <button mat-button id="btnClose" (click)="onBtnClose()" fxLayout="column" fxLayoutAlign="center" fxFlex="5%"><i
+          class="material-icons left smallsmall">close</i></button>
+    </div>
+  </mat-card-actions>
+
+</mat-card>
+
+<div #messageBox></div>
